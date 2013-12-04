@@ -1,0 +1,12 @@
+body {
+	font-size: .9em;
+	font-family: Helvetica, Arial, serif-sans;
+}
+h1, h2 {
+	padding-bottom: 2px;
+	border-bottom: 1px solid silver;
+	font-weight: 300;
+}
+h2 {
+	margin-top: 2em;
+}
