@@ -1,5 +1,5 @@
-WikieStyleMD
-============
+WikiStyleMD
+===========
 
 Wanted to create a document that was very legible and straightforward, just like Wikipedia's documents. Markdown was the option and styling it just like Wikipedia is just what I did.
 
