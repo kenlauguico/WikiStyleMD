@@ -8,7 +8,7 @@ This is still a work in progress. Styles aren't 100% complete as of yet.
 Usage
 -----
 
-If you have .md files in the same directory, all you must do is set the ``f`` parameter equal to that file name
+If you have .md files in the subdirectory ``docs``, all you must do is set the ``f`` parameter equal to that file name
 
      http://your.com/md?f=README
 
