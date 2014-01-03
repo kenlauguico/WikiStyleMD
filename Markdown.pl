@@ -938,7 +938,7 @@ sub _DoCodeBlocks {
 			$codeblock =~ s/\A\n+//; # trim leading newlines
 			$codeblock =~ s/\s+\z//; # trim trailing whitespace
 
-			$result = "\n\n<pre><code>" . $codeblock . "\n</code></pre>\n\n";
+			$result = "\n\n<pre class='prettyprint'><code>" . $codeblock . "\n</code></pre>\n\n";
 
 			$result;
 		}egmx;
@@ -986,7 +986,7 @@ sub _DoCodeSpans {
  			$c =~ s/^[ \t]*//g; # leading whitespace
  			$c =~ s/[ \t]*$//g; # trailing whitespace
  			$c = _EncodeCode($c);
-			"<code>$c</code>";
+			"<code class='prettyprint'>$c</code>";
 		@egsx;
 
 	return $text;

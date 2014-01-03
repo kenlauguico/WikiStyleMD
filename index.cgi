@@ -16,17 +16,18 @@ print  "Content-type:text/html\n\n";
 # Basic HTML tags and styling
 
 print  "<html><head><title>".$mdFile."</title></head>\n";
-print  "<link rel='stylesheet' href='css/style.css'></head>\n\n";
+print  "<link rel='stylesheet' href='../md/css/style.css'></head>\n\n";
 print  "<body>\n";
 
 
 # Run the Markdown.pl script
 
-local @ARGV = ("--html4tags", $mdFile);
+local @ARGV = ("--html4tags", "docs/".$mdFile);
 do "Markdown.pl";
 
 
 # Close and end script
 
+print  "<script src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'></script>\n";
 print  "</body></html>";
 exit;
