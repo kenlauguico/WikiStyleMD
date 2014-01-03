@@ -13,3 +13,14 @@ If you have .md files in the same directory, all you must do is set the ``f`` pa
      http://your.com/?f=README
 
 If README.md is in the same directory, a pretty HTML WikiStyleMD version will be generated server side.
+
+.htaccess
+---------
+
+Modifying your ``.htaccess`` to redirect a specific url to the above url would be ideal. The following is what I have added to my ``.htaccess``
+
+	RewriteRule ^doc/([^/.]+)/?$ md/index.cgi?f=$1 [L]
+
+Doing so will give pretty access to your ``.md`` files like so
+
+	http://your.com/doc/README
