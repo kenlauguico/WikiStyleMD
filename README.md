@@ -10,7 +10,7 @@ Usage
 
 If you have .md files in the same directory, all you must do is set the ``f`` parameter equal to that file name
 
-     http://your.com/?f=README
+     http://your.com/md?f=README
 
 If README.md is in the same directory, a pretty HTML WikiStyleMD version will be generated server side.
 
