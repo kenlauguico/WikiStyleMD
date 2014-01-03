@@ -1,16 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 body {
 	font-size: .9em;
-	font-family: Helvetica, Arial, serif-sans;
+	font-family: 'Open Sans', Arial, serif-sans;
+	margin: 2em;
+	font-weight: 400;
 }
+
 h1, h2 {
 	padding-bottom: 2px;
 	border-bottom: 1px solid silver;
 	font-weight: 300;
 }
-h2 {
-	margin-top: 2em;
+
+h1, h2, h3, h4, h5 { margin-bottom: -0.2em !important; }
+h2 { margin-top: 2em; }
+h3, h4 { margin-top: 1.5em; }
+
+ul, ol { padding-left: 1.5em; }
+li { margin-top: 0.3em; }
+
+a, a:link, a:visited {
+	color: #4183c4;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
-@media (max-width: 800px) {
-	h1 { font-size: 2.5em; font-weight: 600; }
+.prettyprint {
+	padding: 1em !important;
+	background-color: whitesmoke;
+	border: 1px solid silver !important;
+	border-radius: 3px;
+	overflow-x: auto;
+}
+code.prettyprint { padding: 3px !important; }
+
+@media only screen and (max-device-width: 960px) {
+	h1 { font-size: 4em; font-weight: 700; }
+	h2 { font-weight: 400; }
+	body { margin: 3.5em; }
+	.prettyprint { font-size:  1.5em; }
 }
