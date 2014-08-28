@@ -7,7 +7,6 @@
 
 use CGI ':standard';
 
-#$mdFile = "barber.md";
 $mdFile = param("f").".md";
 
 print  "Content-type:text/html\n\n";
